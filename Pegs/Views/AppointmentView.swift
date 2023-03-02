@@ -14,6 +14,13 @@ struct AppointmentView: View {
     @State private var appointmentLocation = ""
     @State private var appointmentDuration = 0
     
+    private var dateFormatter: DateFormatter {
+        let formatter = DateFormatter()
+        formatter.dateStyle = .short
+        formatter.timeStyle = .short
+        return formatter
+    }
+    
     var body: some View {
         TabView {
             NavigationView {
@@ -31,11 +38,11 @@ struct AppointmentView: View {
                 }
                 .navigationTitle("Fishing Appointments")
                 .navigationBarItems(trailing:
-                    Button(action: {
-                        self.showAddAppointment = true
-                    }) {
-                        Image(systemName: "plus")
-                    }
+                                        Button(action: {
+                    self.showAddAppointment = true
+                }) {
+                    Image(systemName: "plus")
+                }
                 )
                 .sheet(isPresented: $showAddAppointment) {
                     VStack {
@@ -56,32 +63,19 @@ struct AppointmentView: View {
                             self.showAddAppointment = false
                         }
                         .padding()
+                        .foregroundColor(.white)
+                        .background(Color.green)
+                        .cornerRadius(10)
                     }
+                    .padding()
                 }
             }
-            .tabItem {
-                Image(systemName: "calendar")
-                Text("Appointments")
-            }
-            
-            LoginView()
-                .tabItem {
-                    Image(systemName: "person.crop.circle")
-                    Text("Login")
-                }
         }
     }
+}
     
-    private var dateFormatter: DateFormatter {
-        let formatter = DateFormatter()
-        formatter.dateStyle = .short
-        formatter.timeStyle = .short
-        return formatter
+    struct AppointmentView_Previews: PreviewProvider {
+        static var previews: some View {
+            AppointmentView()
+        }
     }
-}
-
-struct AppointmentView_Previews: PreviewProvider {
-    static var previews: some View {
-        AppointmentView()
-    }
-}

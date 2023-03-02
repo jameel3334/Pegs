@@ -11,7 +11,7 @@ import SwiftUI
 struct PegsApp: App {
     var body: some Scene {
         WindowGroup {
-            AppointmentView()
+            HomeView()
         }
     }
 }

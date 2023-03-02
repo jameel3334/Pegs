@@ -13,6 +13,9 @@
 		190BC61D29B1371200776E55 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190BC61C29B1371200776E55 /* LoginView.swift */; };
 		190BC62129B1379400776E55 /* AppointmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190BC62029B1379400776E55 /* AppointmentView.swift */; };
 		190BC62529B1381600776E55 /* AppointmentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190BC62429B1381600776E55 /* AppointmentModel.swift */; };
+		190BC62729B1451F00776E55 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190BC62629B1451F00776E55 /* LocationManager.swift */; };
+		190BC62929B1453600776E55 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190BC62829B1453600776E55 /* MapView.swift */; };
+		190BC62B29B1469600776E55 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190BC62A29B1469600776E55 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +26,9 @@
 		190BC61C29B1371200776E55 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		190BC62029B1379400776E55 /* AppointmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentView.swift; sourceTree = "<group>"; };
 		190BC62429B1381600776E55 /* AppointmentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppointmentModel.swift; path = ../../../../Downloads/AppointmentModel.swift; sourceTree = "<group>"; };
+		190BC62629B1451F00776E55 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		190BC62829B1453600776E55 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		190BC62A29B1469600776E55 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				190BC62029B1379400776E55 /* AppointmentView.swift */,
+				190BC62A29B1469600776E55 /* HomeView.swift */,
 				190BC61C29B1371200776E55 /* LoginView.swift */,
 			);
 			path = Views;
@@ -85,6 +92,8 @@
 			isa = PBXGroup;
 			children = (
 				190BC62429B1381600776E55 /* AppointmentModel.swift */,
+				190BC62629B1451F00776E55 /* LocationManager.swift */,
+				190BC62829B1453600776E55 /* MapView.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -160,7 +169,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				190BC61D29B1371200776E55 /* LoginView.swift in Sources */,
+				190BC62B29B1469600776E55 /* HomeView.swift in Sources */,
+				190BC62929B1453600776E55 /* MapView.swift in Sources */,
 				190BC62529B1381600776E55 /* AppointmentModel.swift in Sources */,
+				190BC62729B1451F00776E55 /* LocationManager.swift in Sources */,
 				190BC62129B1379400776E55 /* AppointmentView.swift in Sources */,
 				190BC60F29B124C100776E55 /* PegsApp.swift in Sources */,
 			);
